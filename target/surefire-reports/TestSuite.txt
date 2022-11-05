@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 39.463 s <<< FAILURE! - in TestSuite
+runners.MyTestNGRunnerTest.runScenario["Add one quantity from store with multiple product names", "Optional[Add to cart]"](3)  Time elapsed: 35.165 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [94fe137a-4d3f-42d8-97a4-a5ead9be2bf3, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:8572, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15804, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:8572/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94fe137a-4d3f-42d8-97a4-a5ead9be2bf3
+
+runners.MyTestNGRunnerTest.runScenario["Add one quantity from store for multiple products", "Optional[men's accessories]"](4)  Time elapsed: 35.331 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [31d4dd3f-e33b-40db-b979-c9c16bf56736, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:11920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12292, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:11920/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31d4dd3f-e33b-40db-b979-c9c16bf56736
+
+runners.MyTestNGRunnerTest.runScenario["place an order", "Optional[place order]"](5)  Time elapsed: 35.662 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a1860877-c121-4433-98b0-03cea71b8757, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:47930, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19472, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:47930/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1860877-c121-4433-98b0-03cea71b8757
+
+runners.MyTestNGRunnerTest.runScenario["Add one quantity from store with multiple product names", "Optional[Add to cart]"](6)  Time elapsed: 35.791 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6a99d1b-1e51-4d02-b457-7d97fa493115, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:5055, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13008, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5055/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6a99d1b-1e51-4d02-b457-7d97fa493115
+
+runners.MyTestNGRunnerTest.runScenario["Add one quantity from store", "Optional[Add to cart]"](7)  Time elapsed: 35.805 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eeb08563-70d3-433a-a087-51928d3e4f61, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:17263, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17556, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17263/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eeb08563-70d3-433a-a087-51928d3e4f61
+
+runners.MyTestNGRunnerTest.runScenario["Add one quantity from store with multiple product names", "Optional[Add to cart]"](8)  Time elapsed: 35.899 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [856c359b-e8cb-4ffa-a06f-eed585b6e61c, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:13026, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4628, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13026/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 856c359b-e8cb-4ffa-a06f-eed585b6e61c
+

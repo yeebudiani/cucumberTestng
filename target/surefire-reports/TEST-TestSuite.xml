@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="39.463" tests="8" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\new\zap\cucumberConfig\target\test-classes;C:\new\zap\cucumberConfig\target\classes;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-java\7.0.0-RC1\cucumber-java-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-core\7.0.0-RC1\cucumber-core-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin\7.0.0-RC1\cucumber-gherkin-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.0.0-RC1\cucumber-gherkin-messages-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\messages\17.1.0\messages-17.1.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\tag-expressions\4.0.0\tag-expressions-4.0.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-expressions\12.1.3\cucumber-expressions-12.1.3.jar;C:\Users\DELL\.m2\repository\io\cucumber\datatable\7.0.0-RC1\datatable-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-plugin\7.0.0-RC1\cucumber-plugin-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\docstring\7.0.0-RC1\docstring-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\create-meta\6.0.1\create-meta-6.0.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-rc-2\selenium-java-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-rc-2\selenium-api-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-rc-2\selenium-chrome-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-rc-2\selenium-chromium-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-rc-2\selenium-json-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0-rc-2\selenium-devtools-v85-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0-rc-2\selenium-devtools-v93-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0-rc-2\selenium-devtools-v94-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-rc-2\selenium-edge-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-rc-2\selenium-firefox-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-rc-2\selenium-firefox-xpi-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-rc-2\selenium-ie-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-rc-2\selenium-opera-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-rc-2\selenium-remote-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.81\jcommander-1.81.jar;C:\Users\DELL\.m2\repository\io\netty\netty-buffer\4.1.67.Final\netty-buffer-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-common\4.1.67.Final\netty-common-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport\4.1.67.Final\netty-transport-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-resolver\4.1.67.Final\netty-resolver-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.5.0\opentelemetry-api-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.5.0\opentelemetry-context-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.5.0\opentelemetry-exporter-logging-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.5.0-alpha\opentelemetry-sdk-metrics-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.5.0\opentelemetry-sdk-common-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.5.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.5.0\opentelemetry-sdk-trace-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.5.0-alpha\opentelemetry-api-metrics-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.5.0\opentelemetry-sdk-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.5.0-alpha\opentelemetry-semconv-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.11.13\byte-buddy-1.11.13.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\DELL\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\DELL\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-rc-2\selenium-http-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-rc-2\selenium-safari-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-rc-2\selenium-support-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-testng\7.0.0-RC1\cucumber-testng-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.0\webdrivermanager-5.3.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.9.1\gson-2.9.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0-RC1\cucumber-picocontainer-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire5900101165658914517\surefirebooter904385509543463119.jar C:\Users\DELL\AppData\Local\Temp\surefire5900101165658914517 2022-11-04T20-57-38_736-jvmRun1 surefire7887793821854878154tmp surefire_04293992368947563176tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\new\zap\cucumberConfig\target\test-classes;C:\new\zap\cucumberConfig\target\classes;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-java\7.0.0-RC1\cucumber-java-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-core\7.0.0-RC1\cucumber-core-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin\7.0.0-RC1\cucumber-gherkin-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.0.0-RC1\cucumber-gherkin-messages-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\messages\17.1.0\messages-17.1.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\tag-expressions\4.0.0\tag-expressions-4.0.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-expressions\12.1.3\cucumber-expressions-12.1.3.jar;C:\Users\DELL\.m2\repository\io\cucumber\datatable\7.0.0-RC1\datatable-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-plugin\7.0.0-RC1\cucumber-plugin-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\docstring\7.0.0-RC1\docstring-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\create-meta\6.0.1\create-meta-6.0.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-rc-2\selenium-java-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-rc-2\selenium-api-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-rc-2\selenium-chrome-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-rc-2\selenium-chromium-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-rc-2\selenium-json-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0-rc-2\selenium-devtools-v85-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0-rc-2\selenium-devtools-v93-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0-rc-2\selenium-devtools-v94-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-rc-2\selenium-edge-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-rc-2\selenium-firefox-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-rc-2\selenium-firefox-xpi-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-rc-2\selenium-ie-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-rc-2\selenium-opera-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-rc-2\selenium-remote-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.81\jcommander-1.81.jar;C:\Users\DELL\.m2\repository\io\netty\netty-buffer\4.1.67.Final\netty-buffer-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-common\4.1.67.Final\netty-common-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport\4.1.67.Final\netty-transport-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-resolver\4.1.67.Final\netty-resolver-4.1.67.Final.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.5.0\opentelemetry-api-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.5.0\opentelemetry-context-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.5.0\opentelemetry-exporter-logging-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.5.0-alpha\opentelemetry-sdk-metrics-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.5.0\opentelemetry-sdk-common-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.5.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.5.0\opentelemetry-sdk-trace-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.5.0-alpha\opentelemetry-api-metrics-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.5.0\opentelemetry-sdk-1.5.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.5.0-alpha\opentelemetry-semconv-1.5.0-alpha.jar;C:\Users\DELL\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.11.13\byte-buddy-1.11.13.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\DELL\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\DELL\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-rc-2\selenium-http-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-rc-2\selenium-safari-driver-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-rc-2\selenium-support-4.0.0-rc-2.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-testng\7.0.0-RC1\cucumber-testng-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.0\webdrivermanager-5.3.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.9.1\gson-2.9.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0-RC1\cucumber-picocontainer-7.0.0-RC1.jar;C:\Users\DELL\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\new\zap\cucumberConfig"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire5900101165658914517\surefirebooter904385509543463119.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
+    <property name="user.name" value="DELL"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="firefox"/>
+    <property name="sun.nio.ch.bugLevel" value=""/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="C:\new\zap\cucumberConfig"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="C:\Users\DELL\.cache\selenium\geckodriver\win64\0.32.0\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.5\bin;C:\new\apache-maven-3.8.6\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Add one quantity from store for multiple products&quot;, &quot;Optional[men&apos;s accessories]&quot;](1)" classname="runners.MyTestNGRunnerTest" time="14.798">
+    <system-out><![CDATA[
+@run
+Scenario Outline: Add one quantity from store with multiple product names &amp#27;[90m# src/test/resources/awesomecucumber/add_to_cart.feature:15&amp#27;[0m
+
+Scenario Outline: Add one quantity from store for multiple products &amp#27;[90m# src/test/resources/awesomecucumber/menproducts.feature:9&amp#27;[0m
+
+Scenario Outline: Add one quantity from store for multiple products &amp#27;[90m# src/test/resources/awesomecucumber/menproducts.feature:11&amp#27;[0m
+
+Scenario: place an order                       &amp#27;[90m# src/test/resources/awesomecucumber/place_order.feature:2&amp#27;[0m
+
+Scenario: Add one quantity from store          &amp#27;[90m# src/test/resources/awesomecucumber/add_to_cart.feature:4&amp#27;[0m
+
+@run
+Scenario Outline: Add one quantity from store with multiple product names &amp#27;[90m# src/test/resources/awesomecucumber/add_to_cart.feature:16&amp#27;[0m
+
+Scenario Outline: Add one quantity from store for multiple products &amp#27;[90m# src/test/resources/awesomecucumber/menproducts.feature:10&amp#27;[0m
+
+@run
+Scenario Outline: Add one quantity from store with multiple product names &amp#27;[90m# src/test/resources/awesomecucumber/add_to_cart.feature:17&amp#27;[0m
+BEFORE:THREAD ID:24,SCENARIO NAME:Add one quantity from store for multiple products
+BEFORE:THREAD ID:19,SCENARIO NAME:Add one quantity from store with multiple product names
+BEFORE:THREAD ID:22,SCENARIO NAME:Add one quantity from store for multiple products
+BEFORE:THREAD ID:23,SCENARIO NAME:Add one quantity from store for multiple products
+BEFORE:THREAD ID:18,SCENARIO NAME:Add one quantity from store
+BEFORE:THREAD ID:21,SCENARIO NAME:Add one quantity from store with multiple product names
+BEFORE:THREAD ID:25,SCENARIO NAME:place an order
+BEFORE:THREAD ID:20,SCENARIO NAME:Add one quantity from store with multiple product names
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Mens page&amp#27;[0m                                        &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iMOnTheMensPage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the store page&amp#27;[0m                  &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the store page&amp#27;[0m                                             &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the store page&amp#27;[0m                  &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mmy billing details are&amp#27;[0m                   &amp#27;[90m# awesomecucumber.stepdefinitions.CheckoutStepDefinitions.myBillingDetailsAre(awesomecucumber.DomainObjects.BillingDetails)&amp#27;[0m
+    | first name | last name | country            | address1 | address2 | town/city | state | Zip code | email            |
+    | asdff      | wefwffdfr | United States (US) | dfsffsfg | fwereg   | hkhkh     | Utah  | 23467    | sfsggg@gmail.com |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Mens page&amp#27;[0m                                        &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iMOnTheMensPage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the store page&amp#27;[0m                                             &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the store page&amp#27;[0m                                             &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI will add a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Red Shoes"&amp#27;[0m&amp#27;[32m to the cart&amp#27;[0m                         &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iWillAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be able to see &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m &amp#27;[0m&amp#27;[32m&amp#27;[1m"Red Shoes"&amp#27;[0m&amp#27;[32m in the cart&amp#27;[0m            &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iShouldBeAbleToSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:24,SCENARIO NAME:Add one quantity from store for multiple products
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1667575662555	geckodriver	INFO	Listening on 127.0.0.1:47566
+1667575662565	geckodriver	INFO	Listening on 127.0.0.1:21936
+1667575662655	geckodriver	INFO	Listening on 127.0.0.1:26392
+1667575662666	geckodriver	INFO	Listening on 127.0.0.1:27647
+1667575662686	geckodriver	INFO	Listening on 127.0.0.1:28500
+1667575662709	geckodriver	INFO	Listening on 127.0.0.1:44049
+1667575662721	geckodriver	INFO	Listening on 127.0.0.1:48021
+1667575662728	geckodriver	INFO	Listening on 127.0.0.1:33783
+1667575663155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8572" "--remote-a1l6l6o7w5-7h5o6s6t3s1"5 6"	lmooczarluhostnner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-por"t"  ""60-5n1o"- r"e-m-orteem"o t"e--parlolfoiwl-eh"o s"tCs:"\ "\lUosc1ae6lr6h7so5s7\t5\"6 6D"3E-1Ln5Lo5\-	\rmoeAmzoprtuepn"D n"e-arpt::rrauon\f\i1nLe61ol6c67ea6"r75 	7"5lI5C\7N6:\5F\6T6O\6e3	Um31Rs1pue55\n77\rn	1mio6ng6z r7	srcommand: u5"n7Cn5:e6\r6\3:P1:r6ro2u	gnmnroeazrmr	 IuFNniFnlOee	rRsu:\n:\nriMuonnzgni elcrlo	aIm NmFFaOin	rd:Re fu"onCxn:\\i\\fnPigrr oecgforomaxmm.a enFxdie:l" e "s"C\-:\\-M\moPazrrioilgolrnaae mtF tiFeri"el fe"o-sx-\\r\\eMfmioorzte1667575663167	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionet\\DELL\\AppData\\Local\\Temp\\rust_mozprofilejtYuve"
+fox.exe" "--marionette" "--remote-debugging-port" "11920" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile3Nd0LQ"
+ust_mozprofile6znOmB"
+e1-d6eb67575663174	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remoteu-gdgeibnugg-gpionrgt-" port" "47930" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileMQu3J1"
+"17263" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dilla Firefox\\te" "--remote-debugging-port" "5055" "--remote-allow-hosts" "localhost" "-no-remote" "-pfEiLrrLe\fo\oAxfp.ipelDxeat"a \"\C:L\o\cUasle\r\sTe\m\pD\E\LrLu\st\_AmpopzData\\Local\\Temp\p\rroufsitl_emuozpFpWrtPofi"
+leSUeZzC4"
+" "--marionette" "--remote-debugging-port" "27234" "--remote-allow-hostms"o z"rlouncnaelrh:o:srtu"n n"e-rn	IoN-FrOe	mRotuen"n in"g- pcroomfmialne"d :" C":C\:\\U\sPerrosg\r\aDmE LFLi\l\eAsp\p\MDoaztial\l\aL oFciarle\f\oTxe\m\pf\i\rreufsotx_.meoxze"p r"o-f-imlaer2iYo3nAe9ttCe""
+ "--remote-debugging-port" "13026" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileRsA7pH"
+1667575664185	Marionette	INFO	Marionette enabled
+1667575664187	Marionette	INFO	Marionette enabled
+1667575664194	Marionette	INFO	Listening on port 58751
+1667575664196	Marionette	INFO	Listening on port 58752
+1667575664200	Marionette	INFO	Marionette enabled
+1667575664207	Marionette	INFO	Listening on port 58753
+1667575664209	Marionette	INFO	Marionette enabled
+1667575664233	Marionette	INFO	Listening on port 58754
+1667575664256	Marionette	INFO	Marionette enabled
+1667575664268	Marionette	INFO	Listening on port 58755
+1667575664278	Marionette	INFO	Marionette enabled
+1667575664287	Marionette	INFO	Listening on port 58756
+Read port: 58751
+1667575664315	Marionette	INFO	Marionette enabled
+Read port: 58752
+1667575664329	Marionette	INFO	Listening on port 58759
+Read port: 58753
+Read port: 58756
+1667575664369	Marionette	INFO	Marionette enabled
+Read port: 58754
+Read port: 58755
+1667575664391	Marionette	INFO	Listening on port 58764
+Read port: 58759
+Read port: 58764
+WebDriver BiDi listening on ws://127.0.0.1:8572
+1667575665134	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:13026
+WebDriver BiDi listening on ws://127.0.0.1:17263
+WebDriver BiDi listening on ws://127.0.0.1:11920
+1667575665249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1667575665264	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1667575665290	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:5055
+WebDriver BiDi listening on ws://127.0.0.1:6051
+WebDriver BiDi listening on ws://127.0.0.1:47930
+WebDriver BiDi listening on ws://127.0.0.1:27234
+1667575665498	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1667575665569	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Read port: 58764
+1667575665802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1667575665988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile6znOmB\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileupFWtP\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileRsA7pH\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileMQu3J1\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile3Nd0LQ\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofilejtYuve\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileSUZzC4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8572/devtools/browser/33e74f69-ccbd-42fa-8b4e-200a0e594652
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+Nov 04, 2022 8:57:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+DevTools listening on ws://127.0.0.1:17263/devtools/browser/49c53784-70f5-4b5a-b1c8-8b9d29ba6538
+DevTools listening on ws://127.0.0.1:13026/devtools/browser/6ad070c3-c1c1-490d-b94c-561ef1cbcf10
+Nov 04, 2022 8:57:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 04, 2022 8:57:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+DevTools listening on ws://127.0.0.1:6051/devtools/browser/3ee1039d-cc2d-4200-b503-100512efb439
+Nov 04, 2022 8:57:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+DevTools listening on ws://127.0.0.1:47930/devtools/browser/5e1fac8c-e9f7-4bfd-8dba-caec1f0847df
+Nov 04, 2022 8:57:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+DevTools listening on ws://127.0.0.1:11920/devtools/browser/241047be-3286-4a0c-b671-916ccf1fdcdf
+Nov 04, 2022 8:57:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+DevTools listening on ws://127.0.0.1:5055/devtools/browser/fb76473e-cc66-4ce9-a14d-bb4747a7c54c
+Nov 04, 2022 8:57:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1667575672593	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1667575672655	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1667575672854	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1667575673007	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1667575673022	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1667575673053	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+1667575674357	Marionette	INFO	Stopped listening on port 58759
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store for multiple products&quot;, &quot;Optional[men&apos;s accessories]&quot;](2)" classname="runners.MyTestNGRunnerTest" time="29.711">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Mens page&amp#27;[0m                                        &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iMOnTheMensPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI will add a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Faint Blue Jeans"&amp#27;[0m&amp#27;[32m to the cart&amp#27;[0m                  &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iWillAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be able to see &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m &amp#27;[0m&amp#27;[32m&amp#27;[1m"Faint Blue Jeans"&amp#27;[0m&amp#27;[32m in the cart&amp#27;[0m     &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iShouldBeAbleToSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:23,SCENARIO NAME:Add one quantity from store for multiple products
+]]></system-out>
+    <system-err><![CDATA[console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile2Y3A9C\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:27234/devtools/browser/1c888bf3-cb90-4a70-9b3d-883859d00054
+Nov 04, 2022 8:58:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+1667575689243	Marionette	INFO	Stopped listening on port 58764
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store with multiple product names&quot;, &quot;Optional[Add to cart]&quot;](3)" classname="runners.MyTestNGRunnerTest" time="35.165">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [94fe137a-4d3f-42d8-97a4-a5ead9be2bf3, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:8572, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15804, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:8572/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94fe137a-4d3f-42d8-97a4-a5ead9be2bf3
+]]></failure>
+    <system-out><![CDATA[  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Anchor Bracelet"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m                              &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at âœ½.I add a "Anchor Bracelet" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/add_to_cart.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [94fe137a-4d3f-42d8-97a4-a5ead9be2bf3, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:8572, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15804, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:8572/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94fe137a-4d3f-42d8-97a4-a5ead9be2bf3
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Anchor Bracelet"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m                       &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:19,SCENARIO NAME:Add one quantity from store with multiple product names
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI will add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Basic Blue Jeans"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m                  &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iWillAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.MenSectionPage.viewcart(MenSectionPage.java:21)
+	at awesomecucumber.stepdefinitions.MensAccessories.iWillAddAToTheCart(MensAccessories.java:51)
+	at âœ½.I will add a "Basic Blue Jeans" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/menproducts.feature:5)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [31d4dd3f-e33b-40db-b979-c9c16bf56736, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:11920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12292, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:11920/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31d4dd3f-e33b-40db-b979-c9c16bf56736
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.MenSectionPage.viewcart(MenSectionPage.java:21)
+	at awesomecucumber.stepdefinitions.MensAccessories.iWillAddAToTheCart(MensAccessories.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be able to see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Basic Blue Jeans"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m     &amp#27;[90m# awesomecucumber.stepdefinitions.MensAccessories.iShouldBeAbleToSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:22,SCENARIO NAME:Add one quantity from store for multiple products
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Blue Shoes"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m        &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at âœ½.I add a "Blue Shoes" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/add_to_cart.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eeb08563-70d3-433a-a087-51928d3e4f61, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:17263, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17556, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17263/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eeb08563-70d3-433a-a087-51928d3e4f61
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Blue Shoes"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:18,SCENARIO NAME:Add one quantity from store
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Blue Tshirt"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m                                  &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at âœ½.I add a "Blue Tshirt" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/add_to_cart.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6a99d1b-1e51-4d02-b457-7d97fa493115, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:5055, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13008, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5055/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6a99d1b-1e51-4d02-b457-7d97fa493115
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Blue Tshirt"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m                           &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+AFTER:THREAD ID:20,SCENARIO NAME:Add one quantity from store with multiple product names
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Black Over-the-shoulder Handbag"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m              &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at âœ½.I add a "Black Over-the-shoulder Handbag" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/add_to_cart.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [856c359b-e8cb-4ffa-a06f-eed585b6e61c, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:13026, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4628, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13026/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 856c359b-e8cb-4ffa-a06f-eed585b6e61c
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Black Over-the-shoulder Handbag"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m       &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI add a &amp#27;[0m&amp#27;[31m&amp#27;[1m"Blue Shoes"&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m        &amp#27;[90m# awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(awesomecucumber.DomainObjects.Product)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at âœ½.I add a "Blue Shoes" to the cart(file:///C:/new/zap/cucumberConfig/./src/test/resources/awesomecucumber/place_order.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a1860877-c121-4433-98b0-03cea71b8757, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:47930, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19472, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:47930/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1860877-c121-4433-98b0-03cea71b8757
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at awesomecucumber.pages.StorePage.viewCart(StorePage.java:26)
+	at awesomecucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(StoreStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+&amp#27;[0m
+AFTER:THREAD ID:21,SCENARIO NAME:Add one quantity from store with multiple product names
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m &amp#27;[0m&amp#27;[36m&amp#27;[1m"Blue Shoes"&amp#27;[0m&amp#27;[36m in the cart&amp#27;[0m &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,awesomecucumber.DomainObjects.Product)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should go to checkout page&amp#27;[0m             &amp#27;[90m# awesomecucumber.stepdefinitions.CartStepDefinitions.iShouldGoToChekoutPage()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI have to provide billingDetails&amp#27;[0m         &amp#27;[90m# awesomecucumber.stepdefinitions.CheckoutStepDefinitions.iHaveToProvideBillingDetails()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be place order&amp#27;[0m                 &amp#27;[90m# awesomecucumber.stepdefinitions.CheckoutStepDefinitions.iShouldBePlaceOrder()&amp#27;[0m
+AFTER:THREAD ID:25,SCENARIO NAME:place an order
+]]></system-out>
+    <system-err><![CDATA[1667575693567	Marionette	INFO	Stopped listening on port 58751
+1667575693903	Marionette	INFO	Stopped listening on port 58756
+1667575694240	Marionette	INFO	Stopped listening on port 58755
+1667575694422	Marionette	INFO	Stopped listening on port 58754
+1667575694783	Marionette	INFO	Stopped listening on port 58752
+1667575694979	Marionette	INFO	Stopped listening on port 58753
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store for multiple products&quot;, &quot;Optional[men&apos;s accessories]&quot;](4)" classname="runners.MyTestNGRunnerTest" time="35.331">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [31d4dd3f-e33b-40db-b979-c9c16bf56736, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:11920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12292, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:11920/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31d4dd3f-e33b-40db-b979-c9c16bf56736
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;place an order&quot;, &quot;Optional[place order]&quot;](5)" classname="runners.MyTestNGRunnerTest" time="35.662">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a1860877-c121-4433-98b0-03cea71b8757, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:47930, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19472, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:47930/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1860877-c121-4433-98b0-03cea71b8757
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store with multiple product names&quot;, &quot;Optional[Add to cart]&quot;](6)" classname="runners.MyTestNGRunnerTest" time="35.791">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6a99d1b-1e51-4d02-b457-7d97fa493115, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:5055, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13008, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5055/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6a99d1b-1e51-4d02-b457-7d97fa493115
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store&quot;, &quot;Optional[Add to cart]&quot;](7)" classname="runners.MyTestNGRunnerTest" time="35.805">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eeb08563-70d3-433a-a087-51928d3e4f61, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:17263, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17556, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17263/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eeb08563-70d3-433a-a087-51928d3e4f61
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;Add one quantity from store with multiple product names&quot;, &quot;Optional[Add to cart]&quot;](8)" classname="runners.MyTestNGRunnerTest" time="35.899">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;added_to_cart wc-forward&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='added_to_cart wc-forward']' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class='added_to_cart wc-forward']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'DESKTOP-O0O3IRA', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [856c359b-e8cb-4ffa-a06f-eed585b6e61c, findElement {using=xpath, value=//a[@class='added_to_cart wc-forward']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221102214123, moz:debuggerAddress: 127.0.0.1:13026, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4628, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13026/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 856c359b-e8cb-4ffa-a06f-eed585b6e61c
+]]></failure>
+  </testcase>
+</testsuite>
